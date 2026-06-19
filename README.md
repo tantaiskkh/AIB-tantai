@@ -46,3 +46,14 @@ Validation Set 10%
 Test Set 20%
 
 โดยใช้ตัวของ scikit learn ในการแบ่ง
+
+Evaluation
+
+ในส่วนของการประเมินผลของโมเดลผมใช้
+Accuracy : วัดว่าโมเดลทำนายถูกทั้งหมดกี่เปอร์เซ็นต์
+F1 : เป็นค่าที่รวม Precision และ Recall เข้าด้วยกัน
+Precision : ในสิ่งที่โมเดลบอกว่าเป็น Deepfake ทั้งหมด มี Deepfake จริงกี่เปอร์เซ็นต์
+Recall : Deepfake จริงทั้งหมด โมเดลหาเจอได้กี่เปอร์เซ็นต์
+Loss : วัดว่าโมเดลผิดมากแค่ไหน ระหว่างการเรียนรู้
+Confusion Matrix : ตารางสรุปผลการทำนาย ของโมเดล ว่าทายถูกหรือผิดแบบไหนบ้าง
+Baseline : จาก model https://huggingface.co/shylhy/videomae-large-finetuned-deepfake-subset
